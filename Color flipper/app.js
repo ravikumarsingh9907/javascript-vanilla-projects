@@ -1,12 +1,21 @@
-const color = ["red", "green", "pink", "violet", "yellow", "rgba(135,122,210)", "#f1f5f8"];
 
-const btn = document.getElementById('btn');
-const colors = document.querySelector('.colors');
+const color = ["orange", "blue", "pink", "violet", "yellow", "rgba(135,122,210)", "#f8458e"];
 
-btn.addEventListener('click', function(){
-    const RandomNumber = randomColor();
-    document.body.style.backgroundColor = color[RandomNumber];
-    colors.textContent = color[RandomNumber];
+const buttons = document.querySelectorAll(".btn");
+const value = document.querySelector(".value");
+
+buttons.forEach(function(ans){
+    ans.addEventListener('click', function(f){
+        const RandomNumber = randomColor();
+        const styles = f.currentTarget.classList;
+        if(styles.contains('change')){
+            document.body.style.backgroundColor = color[RandomNumber];
+            value.textContent = color[RandomNumber];
+        }else if(styles.contains('reset')) {
+            document.body.style.backgroundColor = '#fff';
+            value.textContent = '#fff';
+        }
+    });   
 });
 
 function randomColor(){
