@@ -1,0 +1,60 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  background-color: black;}
+
+.content {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  display: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.tab-btn {
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-size: 25px;
+  background-color: transparent;
+  border-color: violet;
+  color: violet;
+  text-transform: uppercase;
+}
+
+.tab-btn.active {
+  background-color: violet !important;
+  color: #fff;
+}
+
+.button-content {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.about {
+  width: 90%;
+  margin: auto;
+  margin-top: 8rem;
+}
+
+h4 {
+  font-size: 25px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: violet;
+}
+
+p{
+  font-size: 17px;
+  margin-top: 3rem;
+  color: violet;
+}
+
+.content.active {
+  display: block !important;
+}
