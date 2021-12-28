@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 2rem;
+  background: yellow;
+  border-radius: 10px;
+  box-shadow: 0 0 8px;
+}
+
+.input-sec {
+  font-size: 30px;
+  border: none;
+  padding: 0.5rem;
+  border-style: double;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  width: 100%;
+}
+
+.guess {
+  border: none;
+  background-color: hsl(120, 73%, 75%);
+  font-size: 30px;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+
+.output {
+  width: 100%;
+}
+
+.result {
+  font-size: 25px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.left-attemp {
+  width: 100%;
+  font-size: 25px;
+}
+
+.again {
+  background-color: black;
+  color: #fff;
+}
